@@ -11,6 +11,7 @@ export function drawFish(fishes, ctx) {
         ctx.moveTo(fish.positonHeadX, fish.positonHeadY); //cabeça
         ctx.lineTo(fish.positonHeadX - fish.sizeBody, fish.positonHeadY - fish.sizeBody); //nadadeira cima
         ctx.lineTo(fish.positonHeadX - fish.sizeBody, fish.positonHeadY + fish.sizeBody); //nadadeira de baixo
+        ctx.stroke();
         ctx.fill();
 
         ctx.beginPath();
@@ -18,6 +19,7 @@ export function drawFish(fishes, ctx) {
         ctx.moveTo(fish.positonHeadX - fish.sizeBody, fish.positonHeadY);
         ctx.lineTo((fish.positonHeadX - fish.sizeBody) - (fish.sizeBody / 2), fish.positonHeadY - (fish.sizeBody / 2));
         ctx.lineTo((fish.positonHeadX - fish.sizeBody) - (fish.sizeBody / 2), fish.positonHeadY + (fish.sizeBody / 2));
+        ctx.stroke();
         ctx.fill();
     })
 

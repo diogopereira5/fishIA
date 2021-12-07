@@ -1,10 +1,15 @@
-import { fishes } from "./models/fishes.js";
+import { generatePopulation } from "./models/fishes.js";
 import { drawFish } from "./utils/drawFish.js";
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
+const width = canvas.width;
+const height = canvas.height;
+
 ctx.fillStyle = "#84DFFF";
-ctx.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillRect(0, 0, width, height);
+
+const fishes = generatePopulation(10, width, height);
 
 drawFish(fishes, ctx);
