@@ -1,5 +1,4 @@
-import { generatePopulation } from "./models/fishes.js";
-import { drawFish } from "./utils/drawFish.js";
+import { generatePopulation, drawFish } from "./models/fishes.js";
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
